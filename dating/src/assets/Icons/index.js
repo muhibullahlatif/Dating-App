@@ -17,6 +17,7 @@ const ActiveSettings = require('./settings-red.png');
 const UnActiveSettings = require('./settings-blue.png');
 const NamePoint = require('./name_point.png');
 const Search = require('./search_ico.png');
+const More = require('./more.png');
 
 export default {
     CountryFlag,
@@ -37,5 +38,6 @@ export default {
     ActiveSettings,
     UnActiveSettings,
     NamePoint,
-    Search
+    Search,
+    More
 }

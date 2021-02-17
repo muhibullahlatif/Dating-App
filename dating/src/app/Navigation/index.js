@@ -17,6 +17,7 @@ import Home from '../Screens/HomeScreen';
 import PairMatch from '../Screens/PairMatchScreen';
 import Message from '../Screens/MessagesScreen';
 import Chat from '../Screens/ChatScreen';
+import Settings from '../Screens/SettingScreen';
 
 const Stack = createStackNavigator();
 
@@ -40,6 +41,7 @@ function Navigation() {
         <Stack.Screen name="PairMatch" component={PairMatch} />
         <Stack.Screen name="Message" component={Message} />
         <Stack.Screen name="Chat" component={Chat} />
+        <Stack.Screen name="Settings" component={Settings} />
       </Stack.Navigator>
     </NavigationContainer>
   </>

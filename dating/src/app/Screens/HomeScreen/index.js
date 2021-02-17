@@ -6,7 +6,7 @@ import Images from '../../../assets/Images';
 import Header from '../../Components/HeaderComponent';
 import Menu from '../../Components/BottomMenuComponent';
 
-const UsersData = [
+const usersData = [
     {
         id: '1',
         image: Images.PoolFemaleUSer,
@@ -38,6 +38,23 @@ const HomeScreen = (props) => {
         setRelation('Casual');
         setShowSearch(false);
     }
+    // const renderItem = ({ item }) => (
+    //     <TouchableOpacity
+    //         activeOpacity={1}
+    //         onPress={() => props.navigation.navigate('PairMatch')}
+    //         >
+    //         <ImageBackground source={item.image} style={Styles.userContainer}>
+    //             <View style={Styles.userDetails}>
+    //                 <Text style={Styles.ageText}>{item.age}</Text>
+    //                 <View style={Styles.userNameContainer}>
+    //                     <Image source={Icons.NamePoint} resizeMode="contain" />
+    //                     <Text style={Styles.userNameText}>{item.userName}</Text>
+    //                 </View>
+    //                 <Text style={Styles.userCountryText}>{item.userCity}</Text>
+    //             </View>
+    //         </ImageBackground>
+    //     </TouchableOpacity>
+    // );
     return(
         <>
             <Header MiddleImage={Images.AppLogo} />
@@ -85,20 +102,13 @@ const HomeScreen = (props) => {
                         </View>
                     </ImageBackground>
                 </TouchableOpacity>
-                {/* <View style={{width: '100%', height: '100%'}}> */}
-                {/* <FlatList 
+                {/* <FlatList
+                    showsHorizontalScrollIndicator={true}
                     scrollEnabled={true}
-                    horizontal={true}
-                    showsHorizontalScrollIndicator={false}
-                    data={UsersData}
-                    renderItem={({ item }) => {
-                        return (
-                            
-                        );
-                    }}
-                    keyExtractor={props.keyExtractor}
+                    data={usersData}
+                    renderItem={renderItem}
+                    keyExtractor={item => item.id}
                 /> */}
-                {/* </View> */}
             </View>
             <Menu 
                 IconHome={Icons.ActiveHome}
@@ -106,7 +116,7 @@ const HomeScreen = (props) => {
                 IconChat={Icons.UnActiveChat}
                 onPressChat={() => props.navigation.navigate('Message')}
                 IconSettings={Icons.UnActiveSettings}
-                onPressSettings={() => props.navigation.navigate('Home')}
+                onPressSettings={() => props.navigation.navigate('Settings')}
             />
         </>
     );
