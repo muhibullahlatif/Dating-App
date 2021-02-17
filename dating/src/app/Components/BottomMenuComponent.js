@@ -8,19 +8,19 @@ const MenuComponent = (props) => {
             <View style={Styles.menuContainInner}>
                 <TouchableOpacity 
                     activeOpacity={1}
-                    onPress={() => props.onPressHome}
+                    onPress={props.onPressHome}
                     style={Styles.innerMenuIcon}>
                     <Image source={props.IconHome} resizeMode="contain" style={Styles.menuIcon} />
                 </TouchableOpacity>
                 <TouchableOpacity 
                     activeOpacity={1}
-                    onPress={() => props.onPressChat}
+                    onPress={props.onPressChat}
                     style={Styles.innerMenuIcon}>
                     <Image source={props.IconChat} resizeMode="contain" style={Styles.menuIcon} />
                 </TouchableOpacity>
                 <TouchableOpacity 
                     activeOpacity={1}
-                    onPress={() => props.onPressSettings}
+                    onPress={props.onPressSettings}
                     style={Styles.innerMenuIcon}>
                     <Image source={props.IconSettings} resizeMode="contain" style={Styles.menuIcon} />
                 </TouchableOpacity>
