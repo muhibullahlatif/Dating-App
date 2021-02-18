@@ -36,7 +36,7 @@ export default StyleSheet.create({
     },
     PhoneContainer: {
         backgroundColor: '#fff',
-        borderRadius: 10,
+        borderRadius: 5,
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
@@ -78,6 +78,27 @@ export default StyleSheet.create({
         marginLeft: 15,
         width: '70%'
     },
+    relationContainer: {
+        backgroundColor: '#FFF',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+        borderRadius: 5,
+        padding: 15,
+        marginTop: 10,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    relationText: {
+        color: '#969DA4'
+    },
     orText: {
         textAlign: 'center',
         color: '#969DA4',
@@ -107,5 +128,46 @@ export default StyleSheet.create({
         color: '#F82E4B',
         marginLeft: 5,
         fontWeight: 'bold'
+    },
+    // Dropdown CSS
+    dropdownContainer: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 15,
+    },
+    dropdownBg: {
+        backgroundColor: '#FFF',
+        borderRadius: 5,
+        padding: 15,
+        width: '100%',
+    },
+    intensionContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        borderBottomWidth: 1,
+        borderBottomColor: '#ccc',
+        marginTop: 5,
+        marginBottom: 5
+    },
+    intensionContainer2: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        marginTop: 5,
+        marginBottom: 5
+    },
+    intensionIcon: {
+        width: 30,
+        height: 30
+    },
+    intensionText: {
+        color: '#001954',
+        fontSize: width * 0.038,
+        fontWeight: '500',
+        marginLeft: 10
     },
 });
